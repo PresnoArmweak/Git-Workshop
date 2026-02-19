@@ -16,6 +16,7 @@
             for (int count = count_start; count < count_end; count++)
             {
                 string fizzbuzz_out = "";
+
                 if ((count % 3 == 0) && (count % 5 == 0))
                 {
                     fizzbuzz_out = "\x1b[35mFizzbuzz\x1b[39m";
@@ -26,6 +27,7 @@
                 {
                     fizzbuzz_out = "\x1b[34mBuzz\x1b[39m";
                 }
+
                 Console.WriteLine($"{count}! {fizzbuzz_out}");
                 Thread.Sleep(sleep_time_ms);
                 count++;
